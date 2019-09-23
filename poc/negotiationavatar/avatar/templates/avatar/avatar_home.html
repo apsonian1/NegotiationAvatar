@@ -1,0 +1,16 @@
+{% load static  from staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home </title>
+        <!<link rel="stylesheet" href="{% static 'style.css'%}">
+    </head>
+    <body>
+    <h1>Profile</h1>
+    {%for x in userprofile%}
+        <h2>{{userprofile.name}}</h2>
+    {%endfor%}
+    </body>
+</html>
